@@ -1,0 +1,61 @@
+.box1{
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    display: block;
+}
+.box2{
+    width: 100%;
+    height: 400px;
+    background-image: url("./landscape.jpeg");
+    background-size: cover;
+    background-position: center-right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.block{
+    background-color: lightblue;
+    display: block;
+}
+.inline{
+    background-color: yellow;
+    display: inline;
+}
+.navbar{
+    position: fixed;
+}
+header{
+    position: sticky;
+}
+.grid{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+button{
+    background-color: yellow;
+    padding: 10px;
+}
+button:hover{
+    background-color: lightblue;
+    transition: all;
+}
+input:focus{
+    border-color: red;
+}
+@media (max-width: 768px) {
+    body{
+        font-size: 12px;
+    }
+}
+
+.box3{
+    background-color: orange;
+    width: 25%;
+    height: 200px;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
